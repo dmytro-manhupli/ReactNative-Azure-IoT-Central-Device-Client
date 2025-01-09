@@ -2,8 +2,9 @@
 node_modules/
 dist/
 
-# vscode
+# ide
 .vscode
+.idea
 
 # npm
 .npmrc

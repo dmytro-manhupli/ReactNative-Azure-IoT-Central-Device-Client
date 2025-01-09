@@ -1,0 +1,50 @@
+{
+  "name": "react-native-azure-iotcentral-client",
+  "version": "1.1.10",
+  "description": "IoTCentral device client for React Native",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run format && tsc",
+    "clean": "rimraf -r dist",
+    "prepublish": "npm run build",
+    "format": "prettier --write src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucadruda/iotc-react-native-device-client.git"
+  },
+  "author": "Luca Druda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucadruda/iotc-react-native-device-client/issues"
+  },
+  "homepage": "https://github.com/lucadruda/iotc-react-native-device-client#readme",
+  "devDependencies": {
+    "@types/crypto-js": "^3.1.45",
+    "@types/uuid": "^7.0.3",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.9"
+  },
+  "dependencies": {
+    "crypto-js": "^3.3.0",
+    "react-native-get-random-values": "^1.4.0",
+    "uuid": "^8.0.0"
+  },
+  "bundledDependencies": [
+    "react-native-paho-mqtt"
+  ],
+  "peerDependencies": {
+    "react-native-get-random-values": "^1.4.0",
+    "react-native-paho-mqtt": "git+https://github.com/lucadruda/react-native-paho-mqtt.git"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
